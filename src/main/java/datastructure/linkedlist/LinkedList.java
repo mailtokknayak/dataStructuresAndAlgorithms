@@ -124,23 +124,23 @@ public class LinkedList {
 
 
     public Node deleteNthNodeFromEnd(int n) {
-         Node temp = new Node(-1);
-         temp.next = head;
-         Node first = temp;
-         Node second = temp;
+        Node temp = new Node(-1);
+        temp.next = head;
+        Node first = temp;
+        Node second = temp;
 
-         while (n >= 0){
-             first = first.next;
-             n--;
-         }
+        while (n >= 0) {
+            first = first.next;
+            n--;
+        }
 
-         while (first != null){
-             first = first.next;
-             second = second.next;
-         }
+        while (first != null) {
+            first = first.next;
+            second = second.next;
+        }
 
-         second.next = second.next.next;
-         return temp;
+        second.next = second.next.next;
+        return temp;
     }
 
 
