@@ -1,7 +1,5 @@
 package datastructure.tree;
 
-import datastructure.mustDoGFG.arrays.TreeProblems;
-
 import java.util.*;
 
 public class Tree {

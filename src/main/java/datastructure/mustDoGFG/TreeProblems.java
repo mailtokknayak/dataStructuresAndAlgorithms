@@ -1,4 +1,4 @@
-package datastructure.mustDoGFG.arrays;
+package datastructure.mustDoGFG;
 
 
 import datastructure.tree.Tree;

@@ -4,7 +4,7 @@ import datastructure.arrays.ArrayMain;
 import datastructure.binarySearch.BinarySearchMain;
 import datastructure.knapsack.KnapsackMain;
 import datastructure.linkedlist.LinkedListMain;
-import datastructure.mustDoGFG.arrays.GFGMain;
+import datastructure.mustDoGFG.GFGMain;
 import datastructure.sorting.SortMain;
 import datastructure.stack.StackMain;
 import datastructure.string.StringMain;

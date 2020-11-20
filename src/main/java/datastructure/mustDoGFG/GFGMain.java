@@ -1,4 +1,4 @@
-package datastructure.mustDoGFG.arrays;
+package datastructure.mustDoGFG;
 
 public class GFGMain {
     public static void gfgMain(){
