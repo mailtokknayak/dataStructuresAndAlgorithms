@@ -5,9 +5,7 @@ import java.util.*;
 
 public class Array {
 
-    public Array() {
-
-    }
+    public Array() { }
 
     public void findMissingNumber1toN(int n, int[] nums) {
         int size = nums.length;

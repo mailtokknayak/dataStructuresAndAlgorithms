@@ -13,10 +13,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DatastructureAndAlgorithmsApplication {
+public class DataStructureAndAlgorithmsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DatastructureAndAlgorithmsApplication.class, args);
+        SpringApplication.run(DataStructureAndAlgorithmsApplication.class, args);
 
         System.out.println("In main Application!!");
 

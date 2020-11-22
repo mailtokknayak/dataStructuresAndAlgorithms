@@ -3,6 +3,8 @@ package datastructure.knapsack;
 public class KnapsackMain {
 
     public static void knapsackMain(){
+        System.out.println("Inside KnapsackMain");
+
         Knapsack knapsack = new Knapsack();
         Knapsack.test();
 

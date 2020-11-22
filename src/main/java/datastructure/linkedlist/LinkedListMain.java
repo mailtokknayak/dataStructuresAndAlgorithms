@@ -3,6 +3,7 @@ package datastructure.linkedlist;
 public class LinkedListMain {
 
     public static void linkedListMain() {
+        System.out.println("Inside LinkedListMain");
 
 //["MyLinkedList","addAtHead","addAtTail","addAtIndex","get","deleteAtIndex","get"]
 //[[],[1],[3],[1,2],[1],[0],[0]]

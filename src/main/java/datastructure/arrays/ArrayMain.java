@@ -6,6 +6,7 @@ public class ArrayMain {
     public static void arrayMain() {
 
         System.out.println("Inside ArrayMain");
+
         int[] nums = {1, 2, 3, 4, 6, 7, 9, 8, 10};
         Array array = new Array();
 
