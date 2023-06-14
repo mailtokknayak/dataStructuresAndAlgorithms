@@ -5,10 +5,12 @@ import datastructure.binarySearch.BinarySearchMain;
 import datastructure.knapsack.KnapsackMain;
 import datastructure.linkedlist.LinkedListMain;
 import datastructure.mustDoGFG.GFGMain;
+import datastructure.recursion.RecursionMain;
 import datastructure.sorting.SortMain;
 import datastructure.stack.StackMain;
 import datastructure.string.StringMain;
 import datastructure.tree.TreeMain;
+import leetcode.Top100EasyQuestionsMain;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -20,17 +22,24 @@ public class DataStructureAndAlgorithmsApplication {
 
         System.out.println("In main Application!!");
 
-        ArrayMain.arrayMain();
-        LinkedListMain.linkedListMain();
-        TreeMain.treeMain();
-        KnapsackMain.knapsackMain();
-        StringMain.stringMain();
-        SortMain.sortMain();
-        BinarySearchMain.binarySearchMain();
-        StackMain.stackMain();
-        GFGMain.gfgMain();
-        StackMain.stackMain();
+//        ArrayMain.arrayMain();
+//        LinkedListMain.linkedListMain();
+//        TreeMain.treeMain();
+//        KnapsackMain.knapsackMain();
+//        StringMain.stringMain();
+//        SortMain.sortMain();
+//        BinarySearchMain.binarySearchMain();
+//        StackMain.stackMain();
+//        GFGMain.gfgMain();
+//        StackMain.stackMain();
 
+//        RecursionMain.recursionMain();
+
+//        StackMain.stackMain();
+
+//        TreeMain.treeMain();
+
+        Top100EasyQuestionsMain.main();
     }
 
 }
