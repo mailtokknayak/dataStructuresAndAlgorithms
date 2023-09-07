@@ -2,6 +2,7 @@ package datastructure;
 
 import datastructure.arrays.ArrayMain;
 import datastructure.binarySearch.BinarySearchMain;
+import datastructure.dynamicPrograming.DynamicProgramingMain;
 import datastructure.knapsack.KnapsackMain;
 import datastructure.linkedlist.LinkedListMain;
 import datastructure.mustDoGFG.GFGMain;
@@ -37,9 +38,10 @@ public class DataStructureAndAlgorithmsApplication {
 
 //        StackMain.stackMain();
 
-//        TreeMain.treeMain();
+        TreeMain.treeMain();
 
-        Top100EasyQuestionsMain.main();
+//        Top100EasyQuestionsMain.main();
+//        DynamicProgramingMain.mainFun();
     }
 
 }

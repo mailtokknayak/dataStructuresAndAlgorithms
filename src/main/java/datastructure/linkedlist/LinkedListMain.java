@@ -27,22 +27,33 @@ public class LinkedListMain {
 //        ls.display();
 
 //        LinkedListLeetCode linkedListLeetCode = new LinkedListLeetCode();
-//        linkedListLeetCode.addAtIndex(0,1);
-//        linkedListLeetCode.addAtIndex(1,2);
-//        linkedListLeetCode.addAtIndex(2,3);
+//        linkedListLeetCode.addAtIndex(0,4);
+//        linkedListLeetCode.addAtIndex(1,1);
+//        linkedListLeetCode.addAtIndex(2,8);
 //        linkedListLeetCode.addAtIndex(3,4);
-//        linkedListLeetCode.addAtIndex(4,2);
-//        linkedListLeetCode.addAtIndex(5,1);
+//        linkedListLeetCode.addAtIndex(4,5);
+//
+//        LinkedListLeetCode linkedListLeetCode1 = new LinkedListLeetCode();
+//        linkedListLeetCode1.addAtIndex(0,5);
+//        linkedListLeetCode1.addAtIndex(1,6);
+//        linkedListLeetCode1.addAtIndex(2,1);
+//        linkedListLeetCode1.addAtIndex(3,8);
+//        linkedListLeetCode1.addAtIndex(4,4);
+//        linkedListLeetCode1.addAtIndex(5,5);
+//
+//        LinkedListLeetCode linkedListLeetCode2  = new LinkedListLeetCode();
+//
+//        linkedListLeetCode2.getIntersectionNode(linkedListLeetCode1, linkedListLeetCode2)
 
-        DoublyLinkedList doublyLinkedList  = new DoublyLinkedList();
-        doublyLinkedList.addAtHead(1);
-        doublyLinkedList.addAtHead(2);
-        doublyLinkedList.addAtTail(3);
-        doublyLinkedList.addAtIndex(3,10);
-        doublyLinkedList.deleteAtIndex(2);
+//        DoublyLinkedList doublyLinkedList  = new DoublyLinkedList();
+//        doublyLinkedList.addAtHead(1);
+//        doublyLinkedList.addAtHead(2);
+//        doublyLinkedList.addAtTail(3);
+//        doublyLinkedList.addAtIndex(3,10);
+//        doublyLinkedList.deleteAtIndex(2);
 
 //        System.out.println(" " +);
-        doublyLinkedList.display();
+//        doublyLinkedList.display();
 
     }
 }

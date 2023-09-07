@@ -204,14 +204,17 @@ public class Tree {
     }
 
     public boolean isSymmetric(Node root) {
-        if (root == null) return true;
-        if (root.lChild == null || root.rChild == null)
+        if(root == null) return true;
+        return isSys(root.lChild, root.rChild);
+    }
+
+    public boolean isSys(Node left, Node right){
+        if(left == null || right == null)
+            return left == right;
+        if(left.data != right.data)
             return false;
-        if (root.lChild.data != root.rChild.data)
-            return false;
-        boolean left = isSymmetric(root.lChild);
-        boolean right = isSymmetric(root.rChild);
-        return left && right;
+
+        return isSys(left.lChild, right.rChild) && isSys(left.rChild, right.lChild);
     }
 
     public Boolean isBst(Node rootNode) {
