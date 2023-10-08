@@ -5,16 +5,6 @@ public class LinkedListLeetCode {
     private Node head = null;
     private int size;
 
-    private class Node {
-        private int data;
-        private Node next;
-
-        public Node(int data) {
-            this.data = data;
-            this.next = null;
-        }
-    }
-
     public LinkedListLeetCode() {
     }
 
@@ -57,7 +47,6 @@ public class LinkedListLeetCode {
 
         }
     }
-
 
     public void deleteAtIndex(int index) {
 
@@ -106,7 +95,6 @@ public class LinkedListLeetCode {
             pointer = pointer.next;
         }
     }
-
 
     //tow pointer technique
     public boolean hasCycle(Node headNode) {
@@ -350,5 +338,15 @@ public class LinkedListLeetCode {
         evenTail.next = null;
         oddTail.next = evenHead;
         return oddHead;
+    }
+
+    private class Node {
+        private int data;
+        private Node next;
+
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
     }
 }

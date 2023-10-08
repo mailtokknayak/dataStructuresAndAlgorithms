@@ -3,20 +3,9 @@ package datastructure.linkedlist;
 
 public class LinkedList {
 
-    class Node {
-        int data;
-        Node next;
-
-        public Node(int data) {
-            this.data = data;
-            this.next = null;
-        }
-    }
-
     Node head;
     //    Node tail;
     int size = 0;
-
     public LinkedList() {
     }
 
@@ -82,7 +71,6 @@ public class LinkedList {
         return current.data;
     }
 
-
     public boolean isCycle() {
 
         if (head != null) {
@@ -122,7 +110,6 @@ public class LinkedList {
 
     }
 
-
     public Node deleteNthNodeFromEnd(int n) {
         Node temp = new Node(-1);
         temp.next = head;
@@ -143,7 +130,6 @@ public class LinkedList {
         return temp;
     }
 
-
     public void display() {
         System.out.println("Size of Linked List " + size);
         System.out.println("Head of Linked List " + head.data);
@@ -151,6 +137,16 @@ public class LinkedList {
         while (head != null) {
             System.out.println("Linked List " + head.data);
             head = head.next;
+        }
+    }
+
+    class Node {
+        int data;
+        Node next;
+
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
         }
     }
 

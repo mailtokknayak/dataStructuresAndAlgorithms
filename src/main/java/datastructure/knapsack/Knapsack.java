@@ -1,9 +1,5 @@
 package datastructure.knapsack;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
 public class Knapsack {
     static int[][] dp;
     static boolean[][] dp1;
@@ -148,7 +144,7 @@ public class Knapsack {
         return isSubSetTD(arr, sum / 2, n);
     }
 
-    public  static int countOfSubset(int[] arr, int sum, int n){
+    public static int countOfSubset(int[] arr, int sum, int n) {
         dp = new int[n + 1][sum + 1];
 
         int sum1 = 0;
@@ -168,7 +164,7 @@ public class Knapsack {
         for (int i = 1; i < n + 1; i++) {
             for (int j = 1; j < sum + 1; j++) {
                 if (arr[i - 1] <= j)
-                    dp[i][j] = dp[i - 1][j - arr[i - 1]] +  dp[i - 1][j];
+                    dp[i][j] = dp[i - 1][j - arr[i - 1]] + dp[i - 1][j];
                 else
                     dp[i][j] = dp[i - 1][j];
             }

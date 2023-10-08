@@ -2,7 +2,7 @@ package datastructure.sorting;
 
 public class SortMain {
 
-    public static void sortMain(){
+    public static void sortMain() {
 
         System.out.println("Inside SortMain");
 

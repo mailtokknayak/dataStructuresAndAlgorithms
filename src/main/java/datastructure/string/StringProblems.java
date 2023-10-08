@@ -23,18 +23,18 @@ public class StringProblems {
         return String.valueOf(chars);
     }
 
-    public String reverseStringWithBuilder(String str){
-        StringBuilder stringBuilder= new StringBuilder();
-       return stringBuilder.append(str).reverse().toString();
+    public String reverseStringWithBuilder(String str) {
+        StringBuilder stringBuilder = new StringBuilder();
+        return stringBuilder.append(str).reverse().toString();
     }
 
-    public void printDuplicate(String str){
+    public void printDuplicate(String str) {
         if (str.isEmpty())
             return;
 
         char[] chars = str.toCharArray();
-        for (int i=0;i<chars.length;i++){
-            for (int j=i+1;j<chars.length;j++){
+        for (int i = 0; i < chars.length; i++) {
+            for (int j = i + 1; j < chars.length; j++) {
                 if (chars[i] == chars[j])
                     System.out.println(chars[i]);
             }

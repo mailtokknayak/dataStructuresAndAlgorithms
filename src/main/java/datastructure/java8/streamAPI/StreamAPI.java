@@ -9,7 +9,7 @@ public class StreamAPI {
     List<String> words = Arrays.asList(new String[]{"hello", "hola", "hallo", "ciao"});
     Stream<String> stream = words.stream();
 
-    Stream<String> stringStream =  Stream.of("hello","hola", "hallo", "ciao");
+    Stream<String> stringStream = Stream.of("hello", "hola", "hallo", "ciao");
 
 
 }

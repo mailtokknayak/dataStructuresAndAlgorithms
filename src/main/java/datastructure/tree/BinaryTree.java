@@ -4,19 +4,16 @@ import java.util.*;
 
 public class BinaryTree {
     Node root;
+    int pre = Integer.MIN_VALUE;
 
-    static class Node {
-        int data;
-        Node left;
-        Node right;
-
-        Node(int data) {
-            this.data = data;
-            this.left = null;
-            this.right = null;
+    public static void printTree(Node root) {
+        if (root == null) {
+            return;
         }
+        System.out.print(root.data + " ");
+        printTree(root.left);
+        printTree(root.right);
     }
-
 
     public void createBST(int data) {
 
@@ -193,7 +190,6 @@ public class BinaryTree {
         return isSym(left.left, right.right) && isSym(left.right, right.left);
     }
 
-
     public boolean pathSum(Node root, int pathSum) {
         if (root == null)
             return false;
@@ -241,8 +237,6 @@ public class BinaryTree {
         return isBstUtils(root.left, minValue, root.data - 1) && isBstUtils(root.right, root.data + 1, maxValue);
     }
 
-    int pre = Integer.MIN_VALUE;
-
     public boolean isBstM2(Node root) {
         if (root == null)
             return true;
@@ -253,15 +247,6 @@ public class BinaryTree {
             return false;
         pre = root.data;
         return isBstM2(root.right);
-    }
-
-    public static void printTree(Node root) {
-        if (root == null) {
-            return;
-        }
-        System.out.print(root.data + " ");
-        printTree(root.left);
-        printTree(root.right);
     }
 
 

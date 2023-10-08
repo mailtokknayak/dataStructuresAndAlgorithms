@@ -1,11 +1,13 @@
 package datastructure.arrays;
 
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Array {
 
-    public Array() { }
+    public Array() {
+    }
 
     public void findMissingNumber1toN(int n, int[] nums) {
         int size = nums.length;

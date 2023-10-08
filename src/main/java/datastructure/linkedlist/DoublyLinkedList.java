@@ -2,16 +2,6 @@ package datastructure.linkedlist;
 
 public class DoublyLinkedList {
 
-    class DNode {
-        int data;
-        DNode pre = null;
-        DNode next = null;
-
-        DNode(int x) {
-            this.data = x;
-        }
-    }
-
     DNode head = null;
 
     public void addAtHead(int data) {
@@ -51,7 +41,7 @@ public class DoublyLinkedList {
         DNode current = head;
         while (current != null) {
             counter++;
-            if (counter == index ) {
+            if (counter == index) {
                 dNode.next = current.next;
                 dNode.pre = current;
                 current.next = dNode;
@@ -65,24 +55,23 @@ public class DoublyLinkedList {
 
     public void deleteAtIndex(int index) {
         DNode current = head;
-       if (index == 0)
-       {
-           head = head.next;
-           current.next = null;
-           head.pre = null;
-           return;
-       }
-       int counter = 0 ;
-       while(current != null){
-           counter++;
-           if (counter == index){
-               if (current.next != null && current.pre != null) {
-                   current.pre.next = current.next;
-                   current.next.pre = current.pre;
-               }
-               return;
-           }
-       }
+        if (index == 0) {
+            head = head.next;
+            current.next = null;
+            head.pre = null;
+            return;
+        }
+        int counter = 0;
+        while (current != null) {
+            counter++;
+            if (counter == index) {
+                if (current.next != null && current.pre != null) {
+                    current.pre.next = current.next;
+                    current.next.pre = current.pre;
+                }
+                return;
+            }
+        }
     }
 
     public void display() {
@@ -92,6 +81,16 @@ public class DoublyLinkedList {
         while (head != null) {
             System.out.println(head.data);
             head = head.next;
+        }
+    }
+
+    class DNode {
+        int data;
+        DNode pre = null;
+        DNode next = null;
+
+        DNode(int x) {
+            this.data = x;
         }
     }
 }

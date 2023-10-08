@@ -1,17 +1,6 @@
 package datastructure;
 
-import datastructure.arrays.ArrayMain;
-import datastructure.binarySearch.BinarySearchMain;
-import datastructure.dynamicPrograming.DynamicProgramingMain;
-import datastructure.knapsack.KnapsackMain;
-import datastructure.linkedlist.LinkedListMain;
 import datastructure.mustDoGFG.GFGMain;
-import datastructure.recursion.RecursionMain;
-import datastructure.sorting.SortMain;
-import datastructure.stack.StackMain;
-import datastructure.string.StringMain;
-import datastructure.tree.TreeMain;
-import leetcode.Top100EasyQuestionsMain;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -38,10 +27,13 @@ public class DataStructureAndAlgorithmsApplication {
 
 //        StackMain.stackMain();
 
-        TreeMain.treeMain();
+//        TreeMain.treeMain();
 
 //        Top100EasyQuestionsMain.main();
 //        DynamicProgramingMain.mainFun();
+
+//        CacheMain.main();
+        GFGMain.main();
     }
 
 }

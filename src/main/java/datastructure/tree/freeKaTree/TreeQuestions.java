@@ -6,16 +6,6 @@ import java.util.Stack;
 
 public class TreeQuestions {
 
-    public class Node {
-        private Node left = null;
-        private Node right = null;
-        private int data;
-
-        public Node(int data) {
-            this.data = data;
-        }
-    }
-
     public Node create(int[] array, int index) {
 
         Node root = null;
@@ -192,5 +182,15 @@ public class TreeQuestions {
 
         return 1 + Math.max(lh, rh);
 
+    }
+
+    public class Node {
+        private Node left = null;
+        private Node right = null;
+        private int data;
+
+        public Node(int data) {
+            this.data = data;
+        }
     }
 }

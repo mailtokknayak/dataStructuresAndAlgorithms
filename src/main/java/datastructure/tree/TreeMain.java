@@ -1,8 +1,5 @@
 package datastructure.tree;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class TreeMain {
 
     public static void treeMain() {
@@ -48,7 +45,7 @@ public class TreeMain {
 
         binaryTree.root = binaryTree.createBinaryTree(nums);
 //        binaryTree.root = binaryTree.createBinaryTreeR(nums, 0);
-        List<Integer> list = new ArrayList<>();
+//        List<Integer> list = new ArrayList<>();
 //        List<Integer> out = binaryTree.inorderTraversal(binaryTree.root);
 //        List<List<Integer>> out1 = binaryTree.levelOrderTraversal(binaryTree.root);
 //        boolean isPathSum = binaryTree.pathSum(binaryTree.root, 55);
@@ -56,12 +53,15 @@ public class TreeMain {
 //        int[] inorder = {9, 3, 15, 20, 7};
 //        binaryTree.buildTree(preorder, inorder);
 //        binaryTree.isBst(binaryTree.root);
-        binaryTree.isBstM2(binaryTree.root);
+//        binaryTree.isBstM2(binaryTree.root);
 //        binaryTree.inOrder(binaryTree.root);
 //        binaryTree.postOrder(binaryTree.root);
 
-        BinaryTree.printTree(binaryTree.root);
+//        BinaryTree.printTree(binaryTree.root);
 
+        BinarySearchTree binarySearchTree = new BinarySearchTree();
+        System.out.println("is BST -> " + binarySearchTree.isBstM1(binaryTree.root));
+        System.out.println("is BST -> " + binarySearchTree.isBstM1(binaryTree.root));
     }
 
 }

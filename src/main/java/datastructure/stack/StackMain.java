@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class StackMain {
 
-    public static void stackMain(){
+    public static void stackMain() {
         System.out.println("Inside StackMain");
 
 
@@ -16,7 +16,7 @@ public class StackMain {
 //        System.out.println(stack.min() + " min data");
 
         StackAVProblems stackAVProblems = new StackAVProblems();
-        int[] arr = {1,3,0,0,1,2,4};
+        int[] arr = {1, 3, 0, 0, 1, 2, 4};
         System.out.println(Arrays.toString(stackAVProblems.nearestGreaterToRight(arr)));
         System.out.println(Arrays.toString(stackAVProblems.nearestGreaterToLeft(arr)));
         System.out.println(Arrays.toString(stackAVProblems.nearestLowerToRight(arr)));

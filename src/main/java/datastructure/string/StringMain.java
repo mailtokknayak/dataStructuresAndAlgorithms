@@ -2,10 +2,10 @@ package datastructure.string;
 
 public class StringMain {
 
-    public static void stringMain(){
+    public static void stringMain() {
         System.out.println("Inside StringMain");
 
         StringProblems stringProblems = new StringProblems();
-       stringProblems.printDuplicate("hello java");
+        stringProblems.printDuplicate("hello java");
     }
 }

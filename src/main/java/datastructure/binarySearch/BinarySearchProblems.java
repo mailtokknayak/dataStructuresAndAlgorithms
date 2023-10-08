@@ -126,7 +126,7 @@ public class BinarySearchProblems {
                 low = mid + 1;
                 result = mid;
             } else if (arr[mid] > key)
-                high = mid-1;
+                high = mid - 1;
 
         }
         return result;

@@ -10,7 +10,7 @@ public class Top100EasyQuestionsMain {
 
         Top100EasyQuestions top100EasyQuestions = new Top100EasyQuestions();
 
-        int[] input = {3,3};
+        int[] input = {3, 3};
         int target = 6;
         System.out.println(Arrays.toString(top100EasyQuestions.twoSum(input, target)));
     }

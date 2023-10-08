@@ -2,7 +2,7 @@ package datastructure.binarySearch;
 
 public class BinarySearchMain {
 
-    public static void binarySearchMain(){
+    public static void binarySearchMain() {
         System.out.println("Inside BinarySearchMain");
 
 
