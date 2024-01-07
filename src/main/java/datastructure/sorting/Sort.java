@@ -4,12 +4,6 @@ public class Sort {
     public Sort() {
     }
 
-    private int[] swap(int i, int j, int[] nums) {
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
-        return nums;
-    }
 
     public int[] bubbleSort(int[] nums) {
         int flag = 0;
@@ -53,13 +47,22 @@ public class Sort {
         return nums;
     }
 
+    public int[] quickSort(int[] nums, int low, int high) {
+        int pivot = partition1(nums, low, high);
+        if (low < high) {
+            nums = quickSort(nums, low, pivot);
+            nums = quickSort(nums, pivot + 1, high);
+        }
+        return nums;
+    }
+
     private int partition(int[] nums, int low, int high) {
         int pivot = nums[low];
         int i = low, j = high;
         do {
             do {
                 i++;
-            } while (nums[i] <= pivot);
+            } while (nums[i] < pivot);
             do {
                 j--;
             } while (nums[j] > pivot);
@@ -71,18 +74,33 @@ public class Sort {
         return j;
     }
 
-    public int[] quickSort(int[] nums, int low, int high) {
-        int pivot = partition(nums, low, high);
-        if (low < high) {
-            nums = quickSort(nums, low, pivot);
-            nums = quickSort(nums, pivot + 1, high);
-        }
-        return nums;
-    }
-
     public void show(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             System.out.println("" + nums[i]);
         }
     }
+
+    private int[] swap(int i, int j, int[] nums) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+        return nums;
+    }
+
+    private int partition1(int[] nums, int l, int h) {
+        int pivot = nums[l];
+        int i = l;
+        int j = h;
+
+        while (i < j) {
+            while (nums[i] <= pivot && i < h) i++;
+            while (nums[j] > pivot && j > l) j--;
+            if (i < j)
+                swap(i, j, nums);
+        }
+        if (j != l)
+            swap(j, l, nums);
+        return j;
+    }
+
 }

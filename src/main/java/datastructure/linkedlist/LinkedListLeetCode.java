@@ -2,7 +2,7 @@ package datastructure.linkedlist;
 
 public class LinkedListLeetCode {
 
-    private Node head = null;
+    public Node head = null;
     private int size;
 
     public LinkedListLeetCode() {
@@ -340,6 +340,49 @@ public class LinkedListLeetCode {
         return oddHead;
     }
 
+    public Node reverse(Node node, int k) {
+        if (node == null)
+            return null;
+
+        Node temp1 = node;
+        Node temp2 = node;
+        Node pre = null;
+        while (k > 0 && temp2 != null) {
+            pre = temp2;
+            temp2 = temp2.next;
+            k--;
+        }
+        pre.next = null;
+        Node head1 = utils(temp1);
+        Node head2 = utils(temp2);
+        Node tail = head1;
+        while (tail != null) {
+            tail = tail.next;
+        }
+        tail.next = head2;
+        return head1;
+    }
+
+    public static Node utils(Node head) {
+        if (head == null)
+            return null;
+        Node pre = null;
+        Node curr = null;
+        Node next = head;
+
+        while (next != null) {
+            pre = curr;
+            curr = next;
+            next = next.next;
+            curr.next = pre;
+        }
+
+        head = curr;
+        return head;
+
+
+    }
+
     private class Node {
         private int data;
         private Node next;
@@ -348,5 +391,37 @@ public class LinkedListLeetCode {
             this.data = data;
             this.next = null;
         }
+    }
+
+    public Node mergeLists(Node head1, Node head2) {
+
+        if (head1 == null) return head2;
+        if (head2 == null) return head1;
+
+        Node headr = new Node(-1);
+        Node out = headr;
+
+        while (head1 != null && head2 != null) {
+            if (head1.data < head2.data) {
+                headr.next = head1;
+                head1 = head1.next;
+                headr = headr.next;
+            } else {
+                headr.next = head2;
+                head2 = head2.next;
+                headr = headr.next;
+            }
+
+        }
+
+
+        System.out.println(headr.data);
+        if (head1 != null)
+            headr.next = head1;
+        if (head2 != null)
+            headr.next = head2;
+
+
+        return out.next;
     }
 }

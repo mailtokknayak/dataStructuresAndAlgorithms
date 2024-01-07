@@ -6,6 +6,8 @@ public class StringMain {
         System.out.println("Inside StringMain");
 
         StringProblems stringProblems = new StringProblems();
-        stringProblems.printDuplicate("hello java");
+//        stringProblems.printDuplicate("hello java");
+//        stringProblems.superReducedString("aaabccddd");
+        stringProblems.patternMatch("sadbutsadx", "sadx");
     }
 }

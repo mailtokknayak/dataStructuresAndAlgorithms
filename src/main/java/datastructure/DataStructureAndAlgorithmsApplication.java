@@ -1,18 +1,20 @@
 package datastructure;
 
-import datastructure.mustDoGFG.GFGMain;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import datastructure.linkedlist.LinkedListMain;
+import datastructure.sorting.SortMain;
+import datastructure.stack.StackMain;
+import datastructure.string.StringMain;
+import mustDoGFG.GFGMain;
 
-@SpringBootApplication
+
 public class DataStructureAndAlgorithmsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DataStructureAndAlgorithmsApplication.class, args);
 
         System.out.println("In main Application!!");
 
 //        ArrayMain.arrayMain();
+//        SortMain.sortMain();
 //        LinkedListMain.linkedListMain();
 //        TreeMain.treeMain();
 //        KnapsackMain.knapsackMain();
@@ -20,20 +22,17 @@ public class DataStructureAndAlgorithmsApplication {
 //        SortMain.sortMain();
 //        BinarySearchMain.binarySearchMain();
 //        StackMain.stackMain();
-//        GFGMain.gfgMain();
 //        StackMain.stackMain();
-
 //        RecursionMain.recursionMain();
-
 //        StackMain.stackMain();
-
 //        TreeMain.treeMain();
-
-//        Top100EasyQuestionsMain.main();
 //        DynamicProgramingMain.mainFun();
-
 //        CacheMain.main();
         GFGMain.main();
+//        Java8Main.mainFun();
+//        HeapMain.main();
+//        StringMain.stringMain();
     }
+
 
 }

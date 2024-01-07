@@ -1,4 +1,4 @@
-package datastructure.stream;
+package java8.stream;
 
 import java.util.Arrays;
 import java.util.List;

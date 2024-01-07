@@ -41,7 +41,7 @@ public class TreeMain {
         BinaryTree binaryTree = new BinaryTree();
 //        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 //        int[] nums = {-2147483648, -2147483648};
-        int[] nums = {2, 1, 3};
+        int[] nums = {6, 5, 0, 3, 7, 1, 4, 2};
 
         binaryTree.root = binaryTree.createBinaryTree(nums);
 //        binaryTree.root = binaryTree.createBinaryTreeR(nums, 0);
@@ -61,7 +61,7 @@ public class TreeMain {
 
         BinarySearchTree binarySearchTree = new BinarySearchTree();
         System.out.println("is BST -> " + binarySearchTree.isBstM1(binaryTree.root));
-        System.out.println("is BST -> " + binarySearchTree.isBstM1(binaryTree.root));
+        System.out.println("is BST -> " + binarySearchTree.isBST(binaryTree.root));
     }
 
 }

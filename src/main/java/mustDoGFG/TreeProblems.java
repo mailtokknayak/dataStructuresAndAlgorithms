@@ -1,4 +1,4 @@
-package datastructure.mustDoGFG;
+package mustDoGFG;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -143,7 +143,7 @@ public class TreeProblems {
         return isSys(left.left, right.right) && isSys(left.right, right.left);
     }
 
-    public ArrayList<Integer> bottomView(Node root) {
+    public ArrayList<Integer> topView(Node root) {
         Queue<Pair> queue = new ArrayDeque<>();
         Map<Integer, Integer> map = new TreeMap<>();
         queue.add(new Pair(0, root));
@@ -164,6 +164,29 @@ public class TreeProblems {
         }
         return arrayList;
     }
+
+    public ArrayList<Integer> bottomView(Node root) {
+        Queue<Pair> queue = new ArrayDeque<>();
+        Map<Integer, Integer> map = new TreeMap<>();
+        queue.add(new Pair(0, root));
+
+        while (!queue.isEmpty()) {
+            Pair cur = queue.poll();
+
+            map.put(cur.hd, cur.node.data);
+
+            if (cur.node.left != null) queue.add(new Pair(cur.hd - 1, cur.node.left));
+
+            if (cur.node.right != null) queue.add(new Pair(cur.hd + 1, cur.node.right));
+        }
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            arrayList.add(entry.getValue());
+        }
+        return arrayList;
+    }
+
 
     public ArrayList<Integer> findSpiral(Node root) {
         // Your code here

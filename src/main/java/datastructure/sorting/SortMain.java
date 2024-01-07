@@ -6,11 +6,11 @@ public class SortMain {
 
         System.out.println("Inside SortMain");
 
-        int[] nums = {18, 10, 2, 15, 25, 6};
+        int[] nums = {5,2,3,1};
         int[] nums1 = {1, 2, 3, 4, 5};
         Sort sort = new Sort();
         nums = sort.quickSort(nums, 0, nums.length - 1);
-        nums = sort.selectionSort(nums);
+//        nums = sort.bubbleSort(nums);
         sort.show(nums);
     }
 }

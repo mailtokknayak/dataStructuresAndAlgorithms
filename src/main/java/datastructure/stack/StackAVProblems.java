@@ -154,4 +154,72 @@ public class StackAVProblems {
         return output;
 
     }
+
+
+    public long[] nextLargerElement(long[] arr, int n) {
+        long[] out = new long[n];
+        if (n == 0)
+            return out;
+
+        Stack<Long> stack = new Stack<>();
+
+        for (int i = n - 1; i >= 0; i--) {
+            if (stack.isEmpty()) {
+                out[i] = -1;
+                stack.push(arr[i]);
+            } else {
+                if (stack.peek() > arr[i]) {
+                    out[i] = stack.peek();
+                    stack.push(arr[i]);
+                } else {
+                    while (!stack.isEmpty() && stack.peek() <= arr[i]) {
+                        stack.pop();
+                    }
+
+                    if (stack.isEmpty()) {
+                        out[i] = -1;
+                        stack.push(arr[i]);
+                    } else {
+                        out[i] = stack.peek();
+                        stack.push(arr[i]);
+                    }
+                }
+            }
+
+        }
+
+        return out;
+    }
+
+    public static String isBalanced(String s) {
+        // Write your code here
+
+        char[] chars = s.toCharArray();
+        Stack<Character> stack = new Stack<>();
+        for (char c : chars) {
+            if (c == '[' || c == '{' || c == '(') {
+                stack.push(c);
+            } else {
+                if (stack.isEmpty())
+                    return "NO";
+                else if (isMatching(stack.peek(), c)) {
+                    stack.pop();
+                } else {
+                    return "NO";
+                }
+            }
+        }
+        if (stack.isEmpty()) {
+            return "YES";
+        }
+
+        return "NO";
+    }
+
+    public static boolean isMatching(char a, char b) {
+        if ((a == '(' && b == ')') || (a == '{' && b == '}') || (a == '[' && b == ']'))
+            return true;
+
+        return false;
+    }
 }

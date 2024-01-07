@@ -33,18 +33,26 @@ public class LinkedListMain {
 //        linkedListLeetCode.addAtIndex(3,4);
 //        linkedListLeetCode.addAtIndex(4,5);
 //
-//        LinkedListLeetCode linkedListLeetCode1 = new LinkedListLeetCode();
-//        linkedListLeetCode1.addAtIndex(0,5);
-//        linkedListLeetCode1.addAtIndex(1,6);
-//        linkedListLeetCode1.addAtIndex(2,1);
-//        linkedListLeetCode1.addAtIndex(3,8);
-//        linkedListLeetCode1.addAtIndex(4,4);
-//        linkedListLeetCode1.addAtIndex(5,5);
+        LinkedListLeetCode linkedListLeetCode1 = new LinkedListLeetCode();
+        linkedListLeetCode1.addAtIndex(0,1);
+        linkedListLeetCode1.addAtIndex(1,3);
+        linkedListLeetCode1.addAtIndex(2,5);
+        linkedListLeetCode1.addAtIndex(3,7);
+
+        LinkedListLeetCode linkedListLeetCode2 = new LinkedListLeetCode();
+        linkedListLeetCode2.addAtIndex(0,2);
+        linkedListLeetCode2.addAtIndex(1,4);
+        linkedListLeetCode2.addAtIndex(2,6);
+        linkedListLeetCode2.addAtIndex(3,8);
+
+
 //
 //        LinkedListLeetCode linkedListLeetCode2  = new LinkedListLeetCode();
 //
 //        linkedListLeetCode2.getIntersectionNode(linkedListLeetCode1, linkedListLeetCode2)
 
+//        linkedListLeetCode1.reverse(linkedListLeetCode1.head, 4);
+        linkedListLeetCode1.mergeLists(linkedListLeetCode1.head , linkedListLeetCode2.head);
 //        DoublyLinkedList doublyLinkedList  = new DoublyLinkedList();
 //        doublyLinkedList.addAtHead(1);
 //        doublyLinkedList.addAtHead(2);
@@ -53,6 +61,7 @@ public class LinkedListMain {
 //        doublyLinkedList.deleteAtIndex(2);
 
 //        System.out.println(" " +);
+//        doublyLinkedList.display();
 //        doublyLinkedList.display();
 
     }
